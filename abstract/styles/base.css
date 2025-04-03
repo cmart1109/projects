@@ -10,6 +10,10 @@
     margin: 0;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 #logo {
     width: 32px;
     color: var(--secondary-color);
@@ -148,4 +152,18 @@ footer a {
 .copyright div {
     margin: 65px;
     font-size: 22px;
+}
+
+#help {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: var(--button-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: medium;
 }
