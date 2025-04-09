@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+    :root {
+        --primary-color:#000000;
+        --secondary-color:#fff;
+        --tertiary-color:#dadbf1;
+        --button-color:#4C5FD5;
+    }
+
+    #sections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 8rem;
+    }
+    
+    #sections img {
+        width: 80px;
+        grid-row: 1/4;
+    }
+
+    #hero div {
+        font-size: 50px;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+        display: flex;
+        height: 70vh;
+    }
+
+
+    .links {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-left: 70px;
+    }
+ 
+    .copyright {
+        width: 50%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .copyright div {
+        margin: 65px;
+        font-size: 22px;
+    }
+}
+

@@ -10,9 +10,11 @@
     margin: 0;
 }
 
-a:hover {
+.area a:hover, a:hover {
     text-decoration: underline;
 }
+
+
 
 #logo {
     width: 32px;
@@ -37,7 +39,10 @@ header {
     width: 25%;
 }
 
-.buttons input {
+#buttons-container {
+    padding-top: 20px;
+}
+#buttons-container input {
     width: 300px;
     padding: 15px;
 }
@@ -61,6 +66,12 @@ header {
     color: var(--secondary-color);
     font-weight: bold;
     padding: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#sign-in:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 #hero {
@@ -72,7 +83,7 @@ header {
 }
 
 #hero div {
-    font-size: 50px;
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,15 +97,13 @@ header {
 }
 
 #sections {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    padding: 8rem;
+    padding: 4rem;
 }
 
 #sections img {
-    width: 90px;
+    width: 80px;
     grid-row: 1/4;
+    padding: 2rem;
 }
 
 .area {
@@ -113,10 +122,7 @@ header {
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    display: flex;
-    height: 70vh;
 }
-
 footer a {
     color: var(--secondary-color);
     text-decoration: none;
@@ -134,24 +140,20 @@ footer a {
 }
 
 .links {
-    display: flex;
-    width: 50%;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-top: 40px;
-    margin-left: 70px;
 }
 
 .copyright {
-    width: 50%;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
 }
 
 .copyright div {
-    margin: 65px;
-    font-size: 22px;
+    margin: 30px;
+    font-size: 18px;
 }
 
 #help {
