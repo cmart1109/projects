@@ -14,7 +14,20 @@
     text-decoration: underline;
 }
 
+#menu {
+    font-size: 1rem;
+    border: 0;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
 
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
 
 #logo {
     width: 32px;
@@ -40,8 +53,15 @@ header {
 }
 
 #buttons-container {
-    padding-top: 20px;
+    display: none;
 }
+
+#buttons-container.open {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
 #buttons-container input {
     width: 300px;
     padding: 15px;
