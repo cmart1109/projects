@@ -33,37 +33,53 @@
     <main>
     <section class="trends">
         <h2>Tendencias</h2>
-        <div class="poster-container">
-            <div class="poster">
-                <img class="poster-image" src="./images/future.webp" alt="trending 1">
-                <h1 class="poster-number">1</h1>
+        <div class="scroll">
+
+            <button class="scroll-button left" onclick="scrollPosters(-1)">&#10094;</button>
+            <div class="poster-container" id="posterContainer">
+                <div class="poster">
+                    <img class="poster-image" src="./images/future.webp" alt="trending 1">
+                    <h1 class="poster-number">1</h1>
+                </div>
+                <div class="poster">
+                    <img class="poster-image" src="./images/future.webp" alt="trending 1">
+                    <h1 class="poster-number">1</h1>
+                </div>
+                <div class="poster">
+                    <img class="poster-image" src="./images/future.webp" alt="trending 1">
+                    <h1 class="poster-number">1</h1>
+                </div>
+                <div class="poster">
+                    <img class="poster-image" src="./images/future.webp" alt="trending 1">
+                    <h1 class="poster-number">1</h1>
+                </div>
+                <div class="poster">
+                    <img class="poster-image" src="./images/future.webp" alt="trending 1">
+                    <h1 class="poster-number">1</h1>
+                </div>
+                <div class="poster">
+                    <img class="poster-image" src="./images/future.webp" alt="trending 1">
+                    <h1 class="poster-number">1</h1>
+                </div>
+                <div class="poster">
+                    <img class="poster-image" src="./images/future.webp" alt="trending 1">
+                    <h1 class="poster-number">1</h1>
+                </div>
+                <div class="poster">
+                    <img class="poster-image" src="./images/future.webp" alt="trending 1">
+                    <h1 class="poster-number">1</h1>
+                </div>
             </div>
-            <div class="poster">
-                <img class="poster-image" src="./images/future.webp" alt="trending 1">
-                <h1 class="poster-number">1</h1>
-            </div>
-            <div class="poster">
-                <img class="poster-image" src="./images/future.webp" alt="trending 1">
-                <h1 class="poster-number">1</h1>
-            </div>
-            <div class="poster">
-                <img class="poster-image" src="./images/future.webp" alt="trending 1">
-                <h1 class="poster-number">1</h1>
-            </div>
-            <div class="poster">
-                <img class="poster-image" src="./images/future.webp" alt="trending 1">
-                <h1 class="poster-number">1</h1>
-            </div>
-            <div class="poster">
-                <img class="poster-image" src="./images/future.webp" alt="trending 1">
-                <h1 class="poster-number">1</h1>
-            </div>
+            <button class="scroll-button right" onclick="scrollPosters(1)">&#10095;</button>
+            
+            
+        </div>
         </div>
     </section>
     <section>
         <h2>Mas Motivos para unirte</h2>
         <div class="card">
-        <h3>Disfruta en tu TV</h3>    
+            <h3>Disfruta en tu TV</h3>    
         <p>Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
         </div>
         <div class="card">
@@ -87,5 +103,6 @@
    <footer>
     <h1>Footer</h1>
    </footer>
+   <script src="./scripts/scroll.js"></script>
 </body>
 </html>
