@@ -8,6 +8,7 @@
     margin: 0;
     color: var(--font-color);
     font-family: sans-serif;
+    padding: 0;
 }
 
 
@@ -54,6 +55,7 @@ header {
     position: relative;
 }
 
+
 .mainer h1 {
     width: 50%;
     font-size: 56px;
@@ -68,9 +70,14 @@ header {
     line-height: normal;
 }
 
-.hero-text {margin-top: 2rem; width: 50%;}
-.email-login {width: 50%; border: 5px solid white;}
-#email {width: 50%;}
+.hero-text {margin-top: 2rem; width: 40%;}
+.email-login {width: 70%; margin: 10px;}
+#email {
+    width: 40%;
+    background-color: #101010;
+    border: 1px solid grey;
+    padding: 20px;
+}
 
 .red-button {
     background-color: var(--main-color);
@@ -82,9 +89,19 @@ header {
     border-radius: 8px;
 }
 
-main, footer {
-    background-color: var(--background-color);
+.start-button {
+    background-color: var(--main-color);
+    color: var(--font-color);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 20%;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    height: 100%;
 }
+
+main, footer {background-color: var(--background-color);}
 
 .language {
     background-color: var(--background-color);
@@ -93,4 +110,44 @@ main, footer {
     padding: 5px;
     width: 8rem;
     border-radius: 2px;
+}
+
+main {
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.trends {
+    padding: 10px auto;
+}
+
+.poster {
+    display: flex;
+    width: 180px;
+    height: 270px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.poster-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.poster-image {
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    transition: width, 0.4s;
+}
+
+.poster-image:hover {
+    width: 88%;
+    height: 88%;
+}
+
+.poster-number {
+    position: absolute;
 }
